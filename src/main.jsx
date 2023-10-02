@@ -4,7 +4,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import {
   Route,
-  Router,
   RouterProvider,
   createBrowserRouter,
   createRoutesFromElements,
@@ -14,6 +13,7 @@ import Home from "./components/home/Home";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Layout from "./Layout";
+import User from "./User/User";
 
 // const router = createBrowserRouter([
 //   {
@@ -42,6 +42,7 @@ const router = createBrowserRouter(
       <Route path="" element={<Home />} />
       <Route path="about" element={<About />} />
       <Route path="contact" element={<Contact />} />
+      <Route path="user/:userId" element={<User />} />
     </Route>
   )
 );
